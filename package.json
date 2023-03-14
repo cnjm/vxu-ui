@@ -10,7 +10,7 @@
     "clean:lib": "rimraf node_modules",
     "clean:dist": "rimraf dist",
     "prepare": "husky install",
-    "lint:eslint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
+    "lint:eslint": "eslint --cache --max-warnings 0  \"**/*.{vue,js,ts,jsx,tsx,md}\" --fix",
     "lint:fix": "pnpm run lint:eslint --fix",
     "lint:prettier": "prettier --write  \"*.{js,json,tsx,css,less,scss,vue,html,md}\"",
     "lint:lint-staged": "lint-staged"
