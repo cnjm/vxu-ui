@@ -4,7 +4,7 @@ module.exports = {
   useTabs: false,
   semi: true, // 句末是否加分号
   vueIndentScriptAndStyle: true,
-  singleQuote: false, // 单引号
+  singleQuote: true, // 单引号
   trailingComma: "all", // 最后一个对象元素加逗号
   bracketSpacing: true, // 对象，数组加空格
   jsxBracketSameLine: true, // jsx > 是否另起一行
