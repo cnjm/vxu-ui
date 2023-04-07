@@ -1,10 +1,7 @@
 
-import Button from './src/button.vue'
+import _Button from './src/button.vue'
+import { withInstall } from '../utils/withInstall'
 
-import { App } from 'vue'
-Button.install = (app: App) => {
-  app.component(Button.name, Button)
-}
-export default Button
+export default withInstall(_Button)
 
-export * from './src/button'
+export type { ButtonProps } from './src/button'

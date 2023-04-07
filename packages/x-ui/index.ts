@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import Button from '@x-ui/components/button/src/button'
+import Button from '@x-ui/components/button'
 // import component end
 // import '../scss/index.scss'
 
