@@ -9,6 +9,5 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@x-ui/components": "workspace:^1.0.0"
   }
 }
