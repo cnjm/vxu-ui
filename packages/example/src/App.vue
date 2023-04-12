@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { Button } from '@x-ui/x-ui'
 </script>
 
 <template>
   <div>
-  <HelloWorld msg=""/>
   </div>
-  <x-button/>
+  <Button/>
 </template>
 
 <style scoped>

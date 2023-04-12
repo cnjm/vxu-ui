@@ -1,11 +1,15 @@
-<script setup lang="ts">
-
-defineProps<{ msg: string }>()
+<script lang="ts">
+import { Button } from '@x-ui/x-ui'
+export default {
+  components: {
+    [Button.name]: Button
+  }
+}
 
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1><x-button/></h1>
 
 </template>
 

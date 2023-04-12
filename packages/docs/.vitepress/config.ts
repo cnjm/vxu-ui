@@ -36,7 +36,7 @@ export default defineConfig({
     outlineTitle: '文章目录',
     outline: 'deep',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/cnjm/x-ui' }
     ],
     nav,
     sidebar

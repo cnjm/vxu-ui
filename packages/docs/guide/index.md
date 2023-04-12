@@ -1,3 +1,3 @@
 # 组件库介绍
 ​
-X-UI Vue3企业级H5组件库
+X-UI Vue3 + TS UI组件库
