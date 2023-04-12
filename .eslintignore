@@ -8,6 +8,7 @@ node_modules
 .hbuilderx
 .idea
 dist
+lib
 /public
 /docs
 .husky
