@@ -15,7 +15,7 @@ export default defineConfig({
       dirs: [],
       resolvers: [
         (componentName) => {
-          if (componentName.startsWith('X')) { return { name: componentName.slice(1), from: '@x-ui' } }
+          if (componentName.startsWith('Vxu')) { return { name: componentName.slice(3), from: '@vxu-ui/vxu-ui' } }
         }
       ]
     })

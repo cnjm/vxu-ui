@@ -1,6 +1,6 @@
 
 export function createNamespace (name: string) {
-  const prefixedName = `x-${name}`
+  const prefixedName = `vxu-${name}`
   return [
     prefixedName
   ] as const

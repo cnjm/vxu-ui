@@ -7,13 +7,13 @@ const app = createApp(App)
 app.mount('#app')
 
 // 全量引入
-// import Xui from '@x-ui/x-ui'
+// import Vxu from '@vxu-ui/vxu-ui'
 // const app = createApp(App)
-// app.use(Xui)
+// app.use(Vxu)
 // app.mount('#app')
 
 // 按需引入
-// import { Button } from '@x-ui/x-ui'
+// import { Button } from '@vxu-ui/vxu-ui'
 // const app = createApp(App)
 // app.use(Button)
 // app.mount('#app')

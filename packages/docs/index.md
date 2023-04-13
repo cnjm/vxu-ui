@@ -1,15 +1,15 @@
 ---
 layout: home
-title: X-UI
+title: Vxu-UI
 editLink: true
 lastUpdated: true
 hero:
-  name: X-UI
-  text: X-UI Vue3企业级H5组件库
+  name: Vxu-UI
+  text: Vxu-UI Vue3企业级H5组件库
   tagline: 组件库描述 / SLOGAN
   image:
     src: /logo.png
-    alt: X-UI
+    alt: Vxu-UI
   actions:
     - theme: brand
       text: 快速开始

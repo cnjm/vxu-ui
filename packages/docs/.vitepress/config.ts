@@ -25,18 +25,18 @@ const sidebar: DefaultTheme.Sidebar = {
 }
 
 export default defineConfig({
-  title: 'x-ui',
-  description: 'X-UI Vue3企业级H5组件库',
+  title: 'vxu-ui',
+  description: 'Vxu-UI Vue3企业级H5组件库',
   lang: 'cn-ZH',
   base: '/',
   lastUpdated: true,
   themeConfig: {
     logo: '/logo.png',
-    siteTitle: 'x-ui',
+    siteTitle: 'vxu-ui',
     outlineTitle: '文章目录',
     outline: 'deep',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/cnjm/x-ui' }
+      { icon: 'github', link: 'https://github.com/cnjm/vxu-ui' }
     ],
     nav,
     sidebar

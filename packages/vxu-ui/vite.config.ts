@@ -17,8 +17,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, './index.ts'),
-      name: 'x-ui',
-      fileName: format => `x-ui.${format}.js`
+      name: 'vxu-ui',
+      fileName: format => `vxu-ui.${format}.js`
     },
     outDir: path.resolve(__dirname, '../../lib'),
     rollupOptions: {

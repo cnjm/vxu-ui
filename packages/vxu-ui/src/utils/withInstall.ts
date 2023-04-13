@@ -17,7 +17,6 @@ export type WithInstall<T> = T & {
 
 export function withInstall<T extends Component> (options: T) {
   (options as Record<string, unknown>).install = (app: App) => {
-    console.log(options)
     const { name } = options
     if (name) {
       console.log(camelize(`-${name}`), options)

@@ -1,28 +1,29 @@
 {
   "name": "vxu-ui",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "vue3+ts UI 组件",
   "type": "module",
-  "main": "./lib/x-ui.umd.js",
-  "module": "./lib/x-ui.es.js",
-  "types": "./lib/x-ui/index.d.ts",
+  "main": "./lib/vxu-ui.umd.js",
+  "module": "./lib/vxu-ui.es.js",
+  "types": "./lib/vxu-ui/index.d.ts",
   "files": [
+    "lib",
     "package.json",
     "README.md"
   ],
   "exports": {
     ".": {
-      "require": "./lib/x-ui.umd.js",
-      "import": "./lib/x-ui.es.js"
+      "require": "./lib/vxu-ui.umd.js",
+      "import": "./lib/vxu-ui.es.js"
     }
   },
   "scripts": {
-    "bootstrap": "pnpm install",
+    "bootstrap": "pnpm install -w",
     "clean": "pnpm run clean:dist && pnpm run -r --parallel clean",
     "clean:lib": "rimraf node_modules",
     "clean:dist": "rimraf dist",
-    "build:lib": "pnpm run -C packages/x-ui build",
+    "build:lib": "pnpm run -C packages/vxu-ui build",
     "pub:npm": "pnpm publish --registry https://registry.npmjs.org",
     "prepare": "husky install",
     "lint:eslint": "eslint --cache --max-warnings 0  \"**/*.{vue,js,ts,jsx,tsx,md}\" --fix",
@@ -32,14 +33,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cnjm/x-ui.git"
+    "url": "git+https://github.com/cnjm/vxu-ui.git"
   },
   "author": "cnjm",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cnjm/x-ui/issues"
+    "url": "https://github.com/cnjm/vxu-ui/issues"
   },
-  "homepage": "https://github.com/cnjm/x-ui#readme",
+  "homepage": "https://github.com/cnjm/vxu-ui#readme",
   "dependencies": {
     "vue": "^3.2.47"
   },

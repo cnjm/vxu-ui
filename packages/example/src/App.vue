@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { Button } from '@x-ui/x-ui'
+// import { Button } from '@vxu-ui/vxu-ui'
 </script>
 
 <template>
   <div>
   </div>
-  <Button/>
+  <vxu-button/>
 </template>
 
 <style scoped>
