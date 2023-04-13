@@ -23,7 +23,7 @@
     "clean:lib": "rimraf node_modules",
     "clean:dist": "rimraf dist",
     "build:lib": "pnpm run -C packages/x-ui build",
-    "pub:npm": "pnpm publish --registry http://registry.npmjs.org",
+    "pub:npm": "pnpm publish --registry https://registry.npmjs.org",
     "prepare": "husky install",
     "lint:eslint": "eslint --cache --max-warnings 0  \"**/*.{vue,js,ts,jsx,tsx,md}\" --fix",
     "lint:fix": "pnpm run lint:eslint --fix",
