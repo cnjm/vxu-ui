@@ -1,7 +1,7 @@
 {
   "name": "@vcx/vcx-ui",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "vue3+ts UI 组件",
   "type": "module",
   "main": "./lib/x-ui.umd.js",
