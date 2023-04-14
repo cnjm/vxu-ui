@@ -1,9 +1,9 @@
-declare const _default: import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<{
+declare const _default: import('vue').DefineComponent<__VLS_TypePropsToRuntimeProps<{
     msg: string;
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<{
+}>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<__VLS_TypePropsToRuntimeProps<{
     msg: string;
-}>>>, {}>;
-export default _default;
+}>>>, {}>
+export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
