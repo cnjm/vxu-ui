@@ -13,8 +13,11 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "declaration": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "types": [
+      "vite/client" // 这里需要设置，否则会报错
+    ]
   },
   "include": ["../**/*.ts", "../**/*.d.ts", "../**/*.tsx", "../**/*.vue"],
-  "exclude": ["../**/node_modules/"]
+  "exclude": ["../**/node_modules/","src/**/__tests__/**", "src/**/*.spec.ts", "src/**/*.spec.tsx"]
 }

@@ -2,13 +2,14 @@
   "name": "@vxu-ui/vxu-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "build": "rimraf ../../lib && vue-tsc --noEmit && vite build"
+    "build": "rimraf ../../es && rimraf ../../lib && vue-tsc --noEmit && vite build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "vite-plugin-build": "^0.8.0",
     "vite-plugin-dts": "^2.2.0"
   }
 }
