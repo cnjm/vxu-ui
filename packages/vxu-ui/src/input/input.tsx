@@ -9,7 +9,9 @@ export default defineComponent({
   setup () {
     return () => {
       return (
-        <input/>
+        <div>
+          <div>label</div><input/>
+        </div>
       )
     }
   }

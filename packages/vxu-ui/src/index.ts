@@ -1,8 +1,8 @@
 import type { App } from 'vue'
 import { version } from '../package.json'
+import './style/index.scss'
 import Button from './button'
 import Input from './input'
-// import component end
 
 const components = [
   Button,

@@ -1,3 +1,4 @@
+import './index.scss'
 import { defineComponent } from 'vue'
 import { createNamespace } from '../utils'
 
@@ -9,7 +10,7 @@ export default defineComponent({
   setup () {
     return () => {
       return (
-        <div>按钮</div>
+        <div class='test'>按钮</div>
       )
     }
   }
