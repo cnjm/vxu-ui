@@ -16,16 +16,17 @@ export default defineConfig({
     })
   ],
   build: {
-    cssCodeSplit: true,
     lib: {
-      entry: path.resolve(__dirname, './src/index.ts'),
+      entry: path.resolve(__dirname, './index.ts'),
       name: 'vxu-ui',
       fileName: format => `vxu-ui.${format}.js`
     },
     outDir: path.resolve(__dirname, '../../lib'),
     rollupOptions: {
+      input: path.resolve(__dirname, './index.ts'),
       external: ['vue'],
       output: {
+        name: 'Vxu',
         globals: {
           vue: 'Vue'
         }

@@ -1,3 +1,3 @@
 <template>
-  <x-button />
+  <vxu-button />
 </template>

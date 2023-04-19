@@ -26,7 +26,7 @@ const sidebar: DefaultTheme.Sidebar = {
 
 export default defineConfig({
   title: 'vxu-ui',
-  description: 'Vxu-UI Vue3企业级H5组件库',
+  description: 'Vxu-UI Vue3企业级组件库',
   lang: 'cn-ZH',
   base: '/',
   lastUpdated: true,

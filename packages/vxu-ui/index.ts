@@ -1,8 +1,8 @@
 import type { App } from 'vue'
-import { version } from '../package.json'
-import './style/index.scss'
-import Button from './button'
-import Input from './input'
+import { version } from './package.json'
+import './src/style/index.scss'
+import Button from './src/button'
+import Input from './src/input'
 
 const components = [
   Button,
@@ -20,8 +20,8 @@ const install = (app: App): void => {
   })
 }
 
-export * from './button'
-export * from './input'
+export * from './src/button'
+export * from './src/input'
 
 const stdinDefault = {
   install,
