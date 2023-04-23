@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Button } from '@vxu-ui/vxu-ui/index.js'
+import { Button } from '@vxu-ui/vxu-ui'
 export default {
   components: {
     [Button.name]: Button

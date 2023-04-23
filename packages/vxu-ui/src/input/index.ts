@@ -1,5 +1,5 @@
 
-import _Input from './input'
+import _Input from './input.vue'
 import { withInstall } from '../utils/withInstall'
 // export default withInstall(_Button)
 const Input = withInstall(_Input)

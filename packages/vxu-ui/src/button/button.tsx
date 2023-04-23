@@ -10,7 +10,7 @@ export default defineComponent({
   setup () {
     return () => {
       return (
-        <div class='test'>按钮</div>
+        <div class='test'>按钮1111</div>
       )
     }
   }

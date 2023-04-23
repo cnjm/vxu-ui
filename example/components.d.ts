@@ -10,5 +10,6 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     VxuButton: typeof import('@vxu-ui/vxu-ui')['Button']
+    VxuInput: typeof import('@vxu-ui/vxu-ui')['Input']
   }
 }

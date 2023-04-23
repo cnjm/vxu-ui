@@ -6,6 +6,7 @@
   <div>
   </div>
   <vxu-button/>
+  <vxu-input/>
 </template>
 
 <style scoped>
