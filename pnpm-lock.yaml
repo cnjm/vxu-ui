@@ -74,12 +74,18 @@ importers:
     specifiers:
       '@vitejs/plugin-vue': ^4.1.0
       '@vxu-ui/vxu-ui': workspace:*
+      cnjm-postcss-px-to-viewport: ^1.0.0
+      normalize.css: ^8.0.1
+      postcss: ^8.4.14
       unplugin-vue-components: ^0.24.1
     dependencies:
       '@vxu-ui/vxu-ui': link:../packages/vxu-ui
+      normalize.css: 8.0.1
     devDependencies:
       '@vitejs/plugin-vue': 4.1.0_vite@4.2.1+vue@3.2.47
-      unplugin-vue-components: 0.24.1_vue@3.2.47
+      cnjm-postcss-px-to-viewport: 1.0.0_postcss@8.4.21
+      postcss: 8.4.21
+      unplugin-vue-components: 0.24.1_rollup@3.20.6+vue@3.2.47
 
   packages/vxu-ui:
     specifiers:
@@ -1105,6 +1111,21 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /@rollup/pluginutils/5.0.2_rollup@3.20.6:
+    resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@types/estree': 1.0.0
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
+      rollup: 3.20.6
+    dev: true
+
   /@rushstack/node-core-library/3.55.2_@types+node@18.15.11:
     resolution: {integrity: sha512-SaLe/x/Q/uBVdNFK5V1xXvsVps0y7h1sN7aSJllQyFbugyOaxhNRF25bwEDnicARNEjJw0pk0lYnJQ9Kr6ev0A==}
     peerDependencies:
@@ -1902,6 +1923,15 @@ packages:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
+    dev: true
+
+  /cnjm-postcss-px-to-viewport/1.0.0_postcss@8.4.21:
+    resolution: {integrity: sha512-vokFS5qvl7JG/W79JYGZgA19LiVvDzQ5aSIQvnZiZAK2lumP+MP8WCs2AU/fK1aSIBpVmqgRpU4m27RBJ2F7rw==}
+    peerDependencies:
+      postcss: ^8.4.14
+    dependencies:
+      object-assign: 4.1.1
+      postcss: 8.4.21
     dev: true
 
   /code-block-writer/11.0.3:
@@ -3651,6 +3681,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /normalize.css/8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
+    dev: false
+
   /npm-run-path/4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
     engines: {node: '>=8'}
@@ -3669,6 +3703,11 @@ packages:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
     dependencies:
       boolbase: 1.0.0
+    dev: true
+
+  /object-assign/4.1.1:
+    resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
+    engines: {node: '>=0.10.0'}
     dev: true
 
   /object-inspect/1.12.3:
@@ -4491,7 +4530,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-vue-components/0.24.1_vue@3.2.47:
+  /unplugin-vue-components/0.24.1_rollup@3.20.6+vue@3.2.47:
     resolution: {integrity: sha512-T3A8HkZoIE1Cja95xNqolwza0yD5IVlgZZ1PVAGvVCx8xthmjsv38xWRCtHtwl+rvZyL9uif42SRkDGw9aCfMA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -4505,7 +4544,7 @@ packages:
         optional: true
     dependencies:
       '@antfu/utils': 0.7.2
-      '@rollup/pluginutils': 5.0.2
+      '@rollup/pluginutils': 5.0.2_rollup@3.20.6
       chokidar: 3.5.3
       debug: 4.3.4
       fast-glob: 3.2.12

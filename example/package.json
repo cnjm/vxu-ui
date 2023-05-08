@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vxu-ui/vxu-ui": "workspace:*"
+    "@vxu-ui/vxu-ui": "workspace:*",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
+    "cnjm-postcss-px-to-viewport": "^1.0.0",
+    "postcss": "^8.4.14",
     "unplugin-vue-components": "^0.24.1"
   }
 }
